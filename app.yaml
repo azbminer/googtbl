@@ -1,0 +1,54 @@
+application: gamershirts-1058
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html
+
+- url: /index.html
+  static_files: index.html
+  upload: index.html
+
+- url: /products.html
+  static_files: products.html
+  upload: products.html
+
+- url: /productcheck.html
+  static_files: productcheck.html
+  upload: productcheck.html
+
+- url: /index.css
+  static_files: index.css
+  upload: index.css
+
+- url: /index.css
+  static_files: index.css
+  upload: index.css
+
+- url: /insertimghere.png
+  static_files: insertimghere.png
+  upload: insertimghere.png
+
+- url: /logoplace.png
+  static_files: logoplace.png
+  upload: logoplace.png
+
+- url: /logoplace.gif
+  static_files: logoplace.gif
+  upload: logoplace.gif
+
+- url: /favicon.ico
+  static_files: favicon.ico
+  upload: favicon.ico
+
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+
+- name: jinja2
+  version: latest
